@@ -1,1 +1,1 @@
-# Java-Script
+# Java-Script lessons and homeworks
