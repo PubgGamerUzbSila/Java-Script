@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+}
+
+.frame {
+  position: absolute;
+  width: _width px;
+  height: _height px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.particle {
+  position: absolute;
+  width: _width px;
+  height: _height px;
+  border-radius: 50%;
+}
+
+@keyframes frame-animation {
+   from {
+     transform: translateY(-1000px);
+     opacity: 1;
+   }
+   to {
+     transform: translateY(0);
+     opacity: 0;
+   }
+}
+
+@keyframes particle-animation {
+   from {
+      left: -(_number_of_text / 2 - i) * _width + (_width /2) px;
+      top:0px;
+      opacity:0; 
+      transform : scale(1,1);
+   }
+   to{
+       left:-(_number_of_text /2 -i)*_width + (_width /2)+ cos(j * _mult_num_particle deg) *100px ;
+       top:sin(j *_mult_num_particle deg)*100px ;
+       opacity :1; 
+       transform : scale(0,0);
+    }
+}
