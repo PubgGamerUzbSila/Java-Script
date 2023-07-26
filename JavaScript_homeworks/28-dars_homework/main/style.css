@@ -117,10 +117,12 @@
     background-color: black;
     color: white;
     border-radius: 5px;
+    background: linear-gradient(45deg,black,white);
     margin-top: 50px;
   }
   #minutes:hover,#difficulty:hover{
-    background-color: white;
+    background: linear-gradient(45deg,white,black);
+
     color: black;
   }
   .glow-on-hover {
@@ -235,6 +237,6 @@
 
     100% {
         transform: scale(1);
-        opacity: 0;
+        opacity: 0; 
     }
 }
