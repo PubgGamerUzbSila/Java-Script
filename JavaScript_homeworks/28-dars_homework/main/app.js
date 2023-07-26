@@ -9,3 +9,15 @@ document.addEventListener('click', e => {
         cursor.classList.remove("expand");
     }, 500);
 });
+
+function startGame() {
+    const minutes = document.getElementById('minutes').value;
+    const difficulty = document.getElementById('difficulty').value;
+  
+    if (minutes < 1 || difficulty === "") {
+      alert("Please enter valid minutes and select a difficulty level before starting the game!");
+
+    } else {
+      alert(`Game started with ${minutes} minute(s) and ${difficulty} difficulty level!`);
+    }
+  }

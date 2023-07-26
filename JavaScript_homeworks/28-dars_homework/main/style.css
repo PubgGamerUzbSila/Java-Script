@@ -112,14 +112,14 @@
     align-items: center;
     text-align: center;
   }
-  #minute,#words{
+  #minutes,#difficulty{
     padding: 10px;
     background-color: black;
     color: white;
     border-radius: 5px;
     margin-top: 50px;
   }
-  #minute:hover,#words:hover{
+  #minutes:hover,#difficulty:hover{
     background-color: white;
     color: black;
   }
